@@ -26,19 +26,13 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-3 mt-8">
             <Button variant="coral" size="xl" asChild>
-              
-                href="#appointment"
-                onClick={() => trackEvent("appointment_cta_click", { source: "hero" })}
-              >
+              <a href="#appointment" onClick={() => trackEvent("appointment_cta_click", { source: "hero" })}>
                 <Calendar className="w-5 h-5" />
                 Записаться на приём
               </a>
             </Button>
             <Button variant="tealOutline" size="xl" asChild>
-              
-                href="#calculator"
-                onClick={() => trackEvent("calculator_cta_click", { source: "hero" })}
-              >
+              <a href="#calculator" onClick={() => trackEvent("calculator_cta_click", { source: "hero" })}>
                 <Calculator className="w-5 h-5" />
                 Рассчитать стоимость
               </a>
@@ -68,7 +62,7 @@ export function Hero() {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-elevated">
             <img
-              src="/building.png.png"
+              src="/building.png"
               alt="Optic clinic building"
               width={1280}
               height={1280}
