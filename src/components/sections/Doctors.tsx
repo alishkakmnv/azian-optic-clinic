@@ -1,12 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { TEMPLATE_DATA } from "@/data/template";
-import doc1 from "@/assets/doctor-1.jpg";
-import doc2 from "@/assets/doctor-2.jpg";
-import doc3 from "@/assets/doctor-3.jpg";
-import doc4 from "@/assets/doctor-4.jpg";
-
-const PHOTOS = [doc1, doc2, doc3, doc4];
 
 export function Doctors() {
   return (
@@ -39,7 +33,7 @@ export function Doctors() {
               <div className="doctor-card-inner bg-background rounded-2xl shadow-card overflow-hidden border-t-[3px] border-primary h-full flex flex-col">
                 <div className="aspect-[4/5] overflow-hidden bg-mint">
                   <img
-                    src={PHOTOS[i % PHOTOS.length]}
+                    src="/customer-glasses.png.png"
                     alt={d.name}
                     loading="lazy"
                     width={768}
