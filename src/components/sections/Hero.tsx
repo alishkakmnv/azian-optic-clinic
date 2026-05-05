@@ -3,7 +3,6 @@ import { Calendar, Calculator, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TEMPLATE_DATA } from "@/data/template";
 import { trackEvent } from "@/lib/tracking";
-import heroImg from "@/assets/hero-clinic.jpg";
 
 export function Hero() {
   const { hero } = TEMPLATE_DATA;
@@ -27,7 +26,7 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-3 mt-8">
             <Button variant="coral" size="xl" asChild>
-              <a
+              
                 href="#appointment"
                 onClick={() => trackEvent("appointment_cta_click", { source: "hero" })}
               >
@@ -36,7 +35,7 @@ export function Hero() {
               </a>
             </Button>
             <Button variant="tealOutline" size="xl" asChild>
-              <a
+              
                 href="#calculator"
                 onClick={() => trackEvent("calculator_cta_click", { source: "hero" })}
               >
@@ -69,8 +68,8 @@ export function Hero() {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-elevated">
             <img
-              src={heroImg}
-              alt="Modern dental clinic interior"
+              src="/building.png.png"
+              alt="Optic clinic building"
               width={1280}
               height={1280}
               className="w-full h-[420px] md:h-[560px] object-cover"
